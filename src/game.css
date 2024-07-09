@@ -1,0 +1,76 @@
+:root{
+    /* Scissors Colors */
+    --scissorsDarkYellow: #ec9e0e;
+    --scissorsDarkYellowBorder: #b87a09;
+    --scissorsLightYellow: #eca922;
+
+    /* Rock Colors */
+    --rockDarkRed: #dc2e4e;
+    --rockDarkRedBorder: #961f35;
+    --rockLightRed: #dd405d;
+
+    /* Paper Colors */
+    --paperDarkBlue: #4865f4;
+    --paperDarkBlueBorder: #3145a8;
+    --paperLightBlue: #5671f5;
+
+    --white: #fcfcfc;
+    --headerOutline2: #cacfda;
+
+}
+
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.icon-game{
+    transition: .2s;
+}
+
+.icon-game:hover{
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
+.icon-game:first-of-type{
+    position: absolute;
+    bottom: 0;
+}
+        
+.icon-game:nth-child(3){
+    position: absolute;
+    top: -2em;
+    right: -1em;
+}
+    
+.icon-game:nth-child(4){
+    position: absolute;
+    top: -2em;
+    left: -1em;
+}
+
+@media only screen and (width >= 1115px) {
+    .triangle{
+        width: 24em;
+    }
+
+    .icon-game img{
+        width: 7.5em;
+        height: 7.5em;
+        padding: 1.6em;
+    }
+
+    .icon-game:nth-child(4){
+        top: -3.5em;
+        left: -1.3em;
+    }
+
+    .icon-game:nth-child(3){
+        top: -3.5em;
+        right: -1.3em;
+    }
+}

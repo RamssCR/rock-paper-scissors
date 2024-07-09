@@ -1,0 +1,59 @@
+:root{
+    /* Neutral Colors */
+    --darkText: #3b4363;
+    --scoreText: #2a46c0;
+    --headerOutline: #606e85;
+    --white: #fcfcfc;
+}
+
+.score-container{
+    border: 3px solid var(--headerOutline);
+    border-radius: 0.3em;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0.6em 1em 1.3em;
+    width: 100%;
+    max-width: 39em;
+}
+
+.score-container .game-mode{
+    color: var(--white);
+    line-height: 1.25em;
+}
+
+.score-container .score-c{
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1em;
+    padding: 0.5em 1.4em;
+    border-radius: 0.3em;
+}
+
+.score-container .score-c .score-title{
+    color: var(--scoreText);
+    font-size: 0.85em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.score-container .score-c .score-value{
+    font-size: 2.3em;
+    font-weight: 700;
+    color: var(--darkText);
+}
+
+@media only screen and (width >= 1115px) {
+    .score-container .game-mode h2{
+        font-size: 1.9em;
+        line-height: 0.8em;
+    }
+
+    .score-container .score-c{
+        padding: 0.5em 1.8em;
+    }
+}

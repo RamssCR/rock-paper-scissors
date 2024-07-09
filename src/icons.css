@@ -1,0 +1,30 @@
+.red{
+    background: linear-gradient(var(--rockLightRed), var(--rockDarkRed));
+    border-radius: 50%;
+    padding: 1em 1em 0.7em 1em;
+    border-bottom: 8px solid var(--rockDarkRedBorder);
+}
+    
+.red img, .yellow img, .blue img{
+    background-color: var(--white);
+    width: 7em;
+    height: 7em;
+    padding: 1.4em;
+    border-radius: 50%;
+    border-top: 7px solid var(--headerOutline2);
+    object-fit: contain;
+}
+
+.yellow{
+    background: linear-gradient(var(--scissorsLightYellow), var(--scissorsDarkYellow));
+    border-radius: 50%;
+    padding: 1em 1em 0.7em 1em;
+    border-bottom: 8px solid var(--scissorsDarkYellowBorder);
+}
+
+.blue{
+    background: linear-gradient(var(--paperLightBlue), var(--paperDarkBlue));
+    border-radius: 50%;
+    padding: 1em 1em 0.7em 1em;
+    border-bottom: 8px solid var(--paperDarkBlueBorder);
+}

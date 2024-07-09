@@ -1,0 +1,82 @@
+:root{
+    --white: #fcfcfc;
+}
+
+.results-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3em;
+}
+
+.results-container .player-choice, .results-container .cpu-choice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.3em;
+}
+
+.icon-display{
+    background-color: #00000022;
+    width: 9em;
+    height: 9em;
+    border-radius: 50%;
+    position: relative;
+}
+
+.picked-mb, .picked-dt{
+    color: var(--white);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.picked-dt{
+    display: none;
+}
+
+.popup{
+    animation: pop .3s linear;
+}
+
+@keyframes pop {
+    0%{
+        transform: scale(0);
+    }
+
+    80%{
+        transform: scale(1.04);
+    }
+
+    90%{
+        transform: scale(1);
+    }
+}
+
+@media only screen and (width >= 1115px){
+    .icon-display{
+        width: 14em;
+        height: 14em;
+    }
+    .results-container{
+        gap: 4em;
+    }
+
+    .picked-dt{
+        display: block;
+    }
+
+    .picked-mb{
+        display: none;
+    }
+
+    .size{
+        width: 14em;
+        height: 14em;
+    }
+
+    .size img{
+        width: 11.7em;
+        height: 11.7em;
+        padding: 3em;
+    }
+}
